@@ -1,24 +1,19 @@
-variable "twilio_account_sid" {
-  description = "Twilio Account SID"
-  type = string
+variable "lambda_function_name" {
+  description = "The name of the Lambda function."
+  type        = string
 }
 
-variable "twilio_auth_token" {
-  description = "Twilio Auth Token"
-  type = string
+variable "handler" {
+  description = "The function entry point in the code."
+  type        = string
 }
 
-variable "twilio_phone_number" {
-  description = "Twilio Phone Number"
-  type = string
+variable "runtime" {
+  description = "The runtime environment for the Lambda function."
+  type        = string
 }
 
-variable "email_address" {
-  description = "Email Address"
-  type = string
-}
-
-variable "email_password" {
-  description = "Email Password"
-  type = string
+variable "role" {
+  description = "The ARN of the IAM role that the Lambda function assumes when it executes."
+  type        = string
 }

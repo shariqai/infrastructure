@@ -1,4 +1,4 @@
 variable "secrets" {
-  description = "Map of secret names and their values"
-  type = map(map(string))
+  description = "A map of secrets to store in AWS Secrets Manager."
+  type        = map(map(string))
 }

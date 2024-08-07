@@ -1,4 +1,4 @@
 variable "log_group_name" {
-  description = "CloudWatch Log Group name"
-  type = string
+  description = "The name of the log group."
+  type        = string
 }
